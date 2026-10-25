@@ -1,0 +1,225 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #333;
+}
+
+header {
+    background: #123c69;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    color: #ffd166;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    background: linear-gradient(120deg, #1565c0, #26a69a);
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.booking {
+    background: white;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+.booking h2,
+.heading {
+    text-align: center;
+    margin: 25px 0;
+    color: #123c69;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+
+button, .btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background: #e68900;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+.card h3 {
+    color: #1565c0;
+    margin: 12px;
+}
+
+.card p {
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+.emoji {
+    font-size: 50px;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #123c69;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #eaf2fa;
+}
+
+.seat-box {
+    background: white;
+    max-width: 450px;
+    padding: 25px;
+    margin: 20px auto 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+.seats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.seats button {
+    background: #28a745;
+}
+
+.seats button:focus {
+    background: #123c69;
+}
+
+.note {
+    color: #555;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.book-btn {
+    background: #123c69;
+    margin-top: 15px;
+}
+
+footer {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .booking {
+        margin: 20px 12px;
+    }
+
+    .cards {
+        padding: 12px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px 4px;
+    }
+}

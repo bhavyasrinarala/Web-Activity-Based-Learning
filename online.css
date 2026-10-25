@@ -1,0 +1,233 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+header {
+    background-color: #e63946;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffdd99;
+}
+
+.hero {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ), url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400")
+    center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ffb703;
+    color: #222;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.offers {
+    text-align: center;
+    background-color: #ffe5b4;
+    padding: 30px 15px;
+}
+
+.offers h2 {
+    color: #e63946;
+    margin-bottom: 12px;
+}
+
+.offers p {
+    margin: 8px;
+}
+
+.menu {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.menu h2,
+.reviews h2,
+.restaurant h2 {
+    color: #e63946;
+    margin-bottom: 25px;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px #ddd;
+    transition: transform 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-card h3 {
+    margin: 12px 0;
+    color: #333;
+}
+
+.food-card p {
+    line-height: 1.5;
+    min-height: 45px;
+}
+
+.food-card h4 {
+    color: #e63946;
+    font-size: 20px;
+    margin: 12px;
+}
+
+button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+.restaurant {
+    text-align: center;
+    padding: 35px 20px;
+    background-color: #ffe5b4;
+    line-height: 2;
+}
+
+.reviews {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.review-card {
+    background-color: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.review-card h3 {
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+/* Tablet screen */
+@media (max-width: 800px) {
+    .food-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}
+
+/* Mobile screen */
+@media (max-width: 500px) {
+    .food-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero {
+        padding: 70px 15px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .food-card img {
+        height: 220px;
+    }
+}

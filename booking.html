@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+<header>
+    <h1>TravelGo</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#booking">Book Tickets</a>
+        <a href="#services">Services</a>
+        <a href="#fares">Fares</a>
+    </nav>  
+</header>
+
+<section class="hero" id="home">
+    <h2>Travel Anywhere, Anytime!</h2>
+    <p>Book your bus and train tickets easily.</p>
+</section>
+
+<section class="booking" id="booking">
+    <h2>Search Your Journey</h2>
+
+    <form>
+        <label>From:</label>
+        <input type="text" placeholder="Source city" required>
+
+        <label>To:</label>
+        <input type="text" placeholder="Destination city" required>
+
+        <label>Travel Date:</label>
+        <input type="date" required>
+
+        <label>Passengers:</label>
+        <input type="number" min="1" max="10"
+               value="1" required>
+
+        <label>Travel Type:</label>
+        <select required>
+            <option value="">Select Travel Type</option>
+            <option>Bus</option>
+            <option>Train</option>
+        </select>
+
+        <button type="submit">Search Tickets</button>
+    </form>
+</section>
+
+<section id="services">
+    <h2 class="heading">Available Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">🚌</div>
+            <h3>Express Bus</h3>
+            <p>Comfortable seats and air conditioning.</p>
+            <p><b>Fare: ₹650</b></p>
+            <p>Departure: 08:00 AM</p>
+            <a href="#seats" class="btn">Select Seats</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🚆</div>
+            <h3>Superfast Train</h3>
+            <p>Enjoy a comfortable long-distance journey.</p>
+            <p><b>Fare: ₹450</b></p>
+            <p>Departure: 09:30 AM</p>
+            <a href="#seats" class="btn">Select Seats</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🚌</div>
+            <h3>Luxury Bus</h3>
+            <p>Premium seating for a relaxing trip.</p>
+            <p><b>Fare: ₹900</b></p>
+            <p>Departure: 10:00 PM</p>
+            <a href="#seats" class="btn">Select Seats</a>
+        </div>
+    </div>
+</section>
+
+<section id="fares">
+    <h2 class="heading">Ticket Fare Details</h2>
+
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Fare</th>
+        </tr>
+        <tr>
+            <td>Express Bus</td>
+            <td>08:00 AM</td>
+            <td>12:00 PM</td>
+            <td>₹650</td>
+        </tr>
+        <tr>
+            <td>Superfast Train</td>
+            <td>09:30 AM</td>
+            <td>01:30 PM</td>
+            <td>₹450</td>
+        </tr>
+        <tr>
+            <td>Luxury Bus</td>
+            <td>10:00 PM</td>
+            <td>05:00 AM</td>
+            <td>₹900</td>
+        </tr>
+    </table>
+</section>
+
+<section id="seats">
+    <h2 class="heading">Select Your Seat</h2>
+
+    <div class="seat-box">
+        <p>Available Seats</p>
+        <div class="seats">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">5</button>
+            <button type="button">6</button>
+            <button type="button">7</button>
+            <button type="button">8</button>
+        </div>
+
+        <p class="note">Green = Available | Grey = Booked</p>
+        <p>Passenger: 1 | Sample fare: ₹650</p>
+        <button type="button" class="book-btn">
+            Book Ticket
+        </button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 TravelGo | Bus and Train Ticket Booking</p>
+</footer>
+
+</body>
+</html>
